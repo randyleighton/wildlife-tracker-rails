@@ -2,6 +2,14 @@
 
 <ul>
   <% @species.each do |animal|%>
-    <li><a href="/species/<%= species.id %>"></a><%= species.name %> </li>
+    <li><a href="/species/<%= animal.id %>"><%= animal.name %></a></li>
   <% end %>
 </ul>
+
+<h2>Create new animal</h2>
+
+<form action="/species" method="post">
+<label for="species_name">Name</label>
+<input id="species_name" name="name" type="text" value="<%=@species.name %>">
+<button>Kick an animal</button>
+</form>
