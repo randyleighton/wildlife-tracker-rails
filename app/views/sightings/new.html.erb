@@ -10,7 +10,7 @@
 <% end %>
 <form action='/species/<%= @sighting.species_id %>/sightings' method='post'>
   <label for='sighting_date'>Sighting date</label>
-  <input id='sighting_date' name='sighting[date]' type='text' value='<%= @sighting.date %>'>
+  <input id='sighting_date' name='sighting[date]' type='text' value='YYYY-MM-DD'>
    <label for='sighting_latitiude'>Latitude</label>
    <input id='sighting_latitiude' name='sighting[latitiude]' type='text' value='<%= @sighting.latitiude %>'>
    <label for='sighting_longitude'>Latitude</label>
