@@ -5,5 +5,10 @@
 <% end %>
 
 <p><a href="/species/<%= @species.id %>/edit">Edit</a></p>
+<p><a href="/species/<%= @species.id %>"
+  data-confirm="You sure?"
+  data-method="delete"
+  rel="nofollow">Kill</a></p>
 
 <p>Back to main <a href="/species">menu</a></p>
+
