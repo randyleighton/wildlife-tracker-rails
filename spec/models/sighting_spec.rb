@@ -1,5 +1,6 @@
 require 'rails_helper'
 
-describe Sightings do
+describe Sighting do
   it {should belong_to :species}
+  it {should validate_presence_of :date}
 end

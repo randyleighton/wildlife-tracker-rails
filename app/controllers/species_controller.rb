@@ -11,7 +11,7 @@ class SpeciesController < ApplicationController
   end
 
   def create
-    @species = Species.create(:name => params[:name])
+    @species = Species.create(params[:species])
     if @species.save
       render('species/success.html.erb')
     else
@@ -26,7 +26,7 @@ class SpeciesController < ApplicationController
 
   def update
     @species = Species.find(params[:id])
-    if @species.update(:name => params[:name])
+    if @species.update(params[:species])
       render('species/success.html.erb')
     else
       render('species/edit.html.erb')
