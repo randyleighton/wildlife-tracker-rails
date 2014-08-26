@@ -4,6 +4,24 @@
   <img src="http://editthis.info/images/speakeasy/5/5b/Gerbil2.jpg">
 <% end %>
 
+<p><a href="/species/<%= @species.id %>/sightings/new">Add sighting</a></p>
+
+<p>Sightings:</p>
+
+<ul>
+  <% @species.sightings.each do |sighting| %>
+    <li>
+      <%= sighting.date %>
+      <a href="/species/<%= @species.id %>/sightings/<%= sighting.id %>/edit">Edit</a>
+      <a href="/species/<%= @species.id %>/sightings/<%= sighting.id %>"
+         data-confirm="You sure?"
+         data-method="delete"
+         rel="nofollow">Delete</a>
+    </li>
+  <% end %>
+</ul>
+
+
 <p><a href="/species/<%= @species.id %>/edit">Edit</a></p>
 <p><a href="/species/<%= @species.id %>"
   data-confirm="You sure?"
