@@ -1,0 +1,10 @@
+default: &default
+  adapter: postgresql
+
+development:
+  <<: *default
+  database: animal_tracker_development
+
+test:
+  <<: *default
+  database: animal_tracker_test
