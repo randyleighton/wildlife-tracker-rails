@@ -1,17 +1,19 @@
-# Wikipages Project
+==Wikipages Project
 
-Ruby on Rails project completed by Randy Leighton and Tanner Steward. This project starts out creating one model for species with 7 restful actions. The second model is then added in for animal sightings, including 5 RESTful actions.
+=Ruby on Rails project completed by Randy Leighton and Tanner Steward.
+
+This project starts out creating one model for species with 7 restful actions. The second model is then added in for animal sightings, including 5 RESTful actions.
+
+---
 
 Date 8/26/2014
   Species - Index, New, Create, Show, Edit, Update, Destroy actions complete.
   Sightings - New and create complete.
 
-This project uses the bundle gem to manage dependencies.
+---
 
-This was completed on ruby v2.0, rails 4.1.5
-
-Database utilized: PostgreSQL
-
-Database names: animal_tracker_development, animal_tracker_test
-
-Testing utilizes rails helper and rspec 3.0
+* This project uses the bundle gem to manage dependencies.
+* This was completed on ruby v2.0, rails 4.1.5
+* Database utilized: PostgreSQL
+* Database names: animal_tracker_development, animal_tracker_test
+* Testing utilizes rails helper and rspec 3.0
