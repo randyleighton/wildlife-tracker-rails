@@ -10,6 +10,7 @@
 
 <ul>
   <% @species.sightings.each do |sighting| %>
+  <% binding.pry %>
     <li>
       <% current_region = Region.find(sighting.region_id) %>
       Date: <%= sighting.date %>, Latitude:  <%= sighting.latitiude %>, Longitude:  <%= sighting.longitude %>, Region: <%= current_region.name%>
