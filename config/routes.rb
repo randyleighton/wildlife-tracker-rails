@@ -15,5 +15,8 @@ Rails.application.routes.draw do
   match('regions', {via: :get, to: 'regions#index'})
   # match('species/:species_id/sightings/:sighting_id/regions/new', {:via => :get, :to => 'regions#new'})
   match('regions', {via: :post, to: 'regions#create'})
+  match('regions/:id', {via: :get, to: 'regions#show'})
+  match('regions/:id/edit', {via: :get, to: 'regions#edit'})
+
 
 end

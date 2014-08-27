@@ -1,0 +1,14 @@
+<h1>Edit Region</h1>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ciR0NyBkX1FmHW_VcDWpo83mxJ3GJX73HO3OmhBZ1k-lknTN">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmQ8oZ_88tQKdYxXm0GcGIWyn0skUZ2wG9-ouiTSM2B3T5UjO7" height=175 width=175>
+<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2z98GEFJnE_dkUmy5qwwbe1zpcV7-V7xGka7a84cE9laNMnpI2g">
+<br><br>
+<form action="/regions/" method="post">
+  <input name="_method" type="hidden" value="patch"
+  <label for="region_name">Update region</label>
+  <input id="region_name" name="region[name]" type="text" value="<%= @region.name %>">
+  <button>Update the Habitat</button>
+</form>
+
+

@@ -1,0 +1,16 @@
+<h1> <%= @region.name %></h1>
+
+<p><a href="/regions/<%= @region.id %>/edit">Edit</a></p>
+<p><a href="/regions/<%= @region.id %>"
+  data-confirm="Are you sure?"
+  data-method="delete"
+  rel="nofollow">Delete</a></p>
+
+<h3> Regional Sightings: </h3>
+
+<% @sightings.each do |sighting| %>
+<p><%= sighting.date %>, latitude: <%= sighting.latitiude %>, longitude: <%= sighting.longitude %></p>
+<% end %>
+
+<button><a href="/regions/">Regional Menu</a></button>
+<button><a href="/species/">Main</a></button>
