@@ -30,7 +30,6 @@ def edit
 end
 
 def update
-  binding.pry
   @sighting = Sighting.find(params[:sighting_id])
   if @sighting.update(params[:sighting])
     render('sightings/success.html.erb')

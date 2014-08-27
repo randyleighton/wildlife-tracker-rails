@@ -9,7 +9,8 @@
 <h3> Regional Sightings: </h3>
 
 <% @sightings.each do |sighting| %>
-<p><%= sighting.date %>, latitude: <%= sighting.latitiude %>, longitude: <%= sighting.longitude %></p>
+<% current_species = Species.find(sighting.species_id) %>
+<p>Species: <%= current_species.name%>,  Date: <%= sighting.date %>,  Latitude: <%= sighting.latitiude %>,  Longitude: <%= sighting.longitude %></p>
 <% end %>
 
 <button><a href="/regions/">Regional Menu</a></button>

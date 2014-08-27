@@ -11,7 +11,8 @@
 <ul>
   <% @species.sightings.each do |sighting| %>
     <li>
-      <%= sighting.date %>, latitude:  <%= sighting.latitiude %>, longitude:  <%= sighting.longitude %>
+      <% current_region = Region.find(sighting.region_id) %>
+      Date: <%= sighting.date %>, Latitude:  <%= sighting.latitiude %>, Longitude:  <%= sighting.longitude %>, Region: <%= current_region.name%>
    | <a href="/species/<%= @species.id %>/sightings/<%= sighting.id %>/edit">Edit</a> |
       <a href="/species/<%= @species.id %>/sightings/<%= sighting.id %>"
          data-confirm="You sure?"
