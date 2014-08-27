@@ -1,28 +1,17 @@
-== README
+# Wikipages Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on Rails project completed by Randy Leighton and Tanner Steward. This project starts out creating one model for species with 7 restful actions. The second model is then added in for animal sightings, including 5 RESTful actions.
 
-Things you may want to cover:
+Date 8/26/2014
+  Species - Index, New, Create, Show, Edit, Update, Destroy actions complete.
+  Sightings - New and create complete.
 
-* Ruby version
+This project uses the bundle gem to manage dependencies.
 
-* System dependencies
+This was completed on ruby v2.0, rails 4.1.5
 
-* Configuration
+Database utilized: PostgreSQL
 
-* Database creation
+Database names: animal_tracker_development, animal_tracker_test
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Testing utilizes rails helper and rspec 3.0
