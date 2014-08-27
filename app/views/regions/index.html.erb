@@ -1,7 +1,7 @@
 <h1>Region Management</h1>
 
 <h3> Add a region </h3>
-<form action="/regions" method="post">
+<form action="/regions/" method="post">
   <label for="region_name">Region Name</label>
   <input id="region_name" name="region[name]" type="text">
   <button>Add Habitat</button>
@@ -10,8 +10,8 @@
 <h3>Current Regions</h3>
 <ul>
   <% @regions.each do |region|%>
-    <li><a href="regions/<%= region.id%>"><%= region.name %></a></li>
+    <li><a href="/regions/<%= region.id%>"><%= region.name %></a></li>
   <% end %>
-</ul
+</ul>
 
 
