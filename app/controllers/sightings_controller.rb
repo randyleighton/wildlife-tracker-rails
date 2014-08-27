@@ -8,6 +8,7 @@ class SightingsController < ApplicationController
   def new
     species = Species.find(params[:species_id])
     @sighting = species.sightings.new
+    @regions = Region.all
     render('sightings/new.html.erb')
   end
 

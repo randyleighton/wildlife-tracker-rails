@@ -15,6 +15,13 @@
    <input id='sighting_latitiude' name='sighting[latitiude]' type='text' value='<%= @sighting.latitiude %>'>
    <label for='sighting_longitude'>Latitude</label>
    <input id='sighting_longitude' name='sighting[longitude]' type='text' value='<%= @sighting.longitude %>'>
+    <label for "sighting_region">Region</label>
+  <select id="sighting_region" name="sighting[region_id]">
+    <% @regions.each do |region| %>
+      <option value="<%= region.id %>"><%= region.name %></option>
+    <% end %>
+  </select>
+
 
 
   <button>Create sighting</button>
