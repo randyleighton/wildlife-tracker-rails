@@ -2,6 +2,8 @@ class SpeciesController < ApplicationController
 
   def index
     @species = Species.all
+    binding.pry
+    @sightings = Sighting.date_search(params[:sightings])
     render('species/index.html.erb')
   end
 
