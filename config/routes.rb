@@ -13,10 +13,10 @@ Rails.application.routes.draw do
   match('species/:species_id/sightings/:sighting_id', {via: [:patch, :put], to: 'sightings#update'})
   match('species/:species_id/sightings/:sighting_id', {via: :delete, to: 'sightings#destroy'})
   match('regions', {via: :get, to: 'regions#index'})
-  # match('species/:species_id/sightings/:sighting_id/regions/new', {:via => :get, :to => 'regions#new'})
   match('regions', {via: :post, to: 'regions#create'})
   match('regions/:id', {via: :get, to: 'regions#show'})
   match('regions/:id/edit', {via: :get, to: 'regions#edit'})
-
+  match('regions/:id', {via: [:patch, :put], to: 'regions#update'})
+  match('regions/:id', {via: :delete, to: 'regions#destroy'})
 
 end

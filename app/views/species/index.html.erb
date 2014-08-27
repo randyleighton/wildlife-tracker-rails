@@ -1,15 +1,20 @@
 <h1>Wild Animals!</h1>
+<br>
+<h3>Current Animal List</h3>
 
 <ul>
   <% @species.each do |animal|%>
     <li><a href="/species/<%= animal.id %>"><%= animal.name %></a></li>
   <% end %>
 </ul>
-
-<h2>Create new animal</h2>
+<br>
+<h3>Create new animal</h3>
 
 <form action="/species" method="post">
 <label for="species_name">Name</label>
 <input id="species_name" name="species[name]" type="text" value="<%=@species.name %>">
-<button>Kick an animal</button>
+<button>Create an animal</button>
 </form>
+
+<br><br>
+<button><a href="/regions/">Regional Menu</a></button>
