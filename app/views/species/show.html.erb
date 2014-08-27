@@ -12,11 +12,11 @@
   <% @species.sightings.each do |sighting| %>
     <li>
       <%= sighting.date %>, latitude:  <%= sighting.latitiude %>, longitude:  <%= sighting.longitude %>
-   <!--    <a href="/species/<%= @species.id %>/sightings/<%= sighting.id %>/edit">Edit</a>
+   <a href="/species/<%= @species.id %>/sightings/<%= sighting.id %>/edit">Edit</a>
       <a href="/species/<%= @species.id %>/sightings/<%= sighting.id %>"
          data-confirm="You sure?"
          data-method="delete"
-         rel="nofollow">Delete</a> -->
+         rel="nofollow">Delete</a>
     </li>
   <% end %>
 </ul>

@@ -1,6 +1,6 @@
-==Wikipages Project
+=Wikipages Project
 
-=Ruby on Rails project completed by Randy Leighton and Tanner Steward.
+==Ruby on Rails project completed by Randy Leighton and Tanner Steward.
 
 This project starts out creating one model for species with 7 restful actions. The second model is then added in for animal sightings, including 5 RESTful actions.
 

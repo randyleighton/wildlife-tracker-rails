@@ -20,4 +20,25 @@ class SightingsController < ApplicationController
       render('sightings/new.html.erb')
     end
   end
+
+def edit
+  @sighting = Sighting.find(params[:sighting_id])
+  render('sightings/edit.html.erb')
+end
+
+def update
+  @sighting = Sighting.find(params[:sighting_id])
+  if @sighting.update(params[:sighting])
+    render('sightings/success.html.erb')
+  else
+    render('sightings/edit.html.erb')
+  end
+end
+
+def destroy
+  @sighting = Sighting.find(params[:sighting_id])
+  @sighting.destroy
+  render('destroy.html.erb')
+end
+
 end
